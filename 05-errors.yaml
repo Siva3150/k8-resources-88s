@@ -4,8 +4,10 @@ metadata:
  name: error-test 
 spec:
  containers:
+ # Image pull backoff
 #  - name: nginx 
-#    image: ngindfdfadsfsaf
+#    image: ngindfdfadsfsaf --> solution -- nginx 
+ #Crashloop backoff 
  - name: almalinux 
    image: almalinux:9
-   command: ["sleep", "1000"]
+   #command: ["sleep", "1000"] --> solution 
