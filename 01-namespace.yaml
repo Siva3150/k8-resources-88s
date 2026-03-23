@@ -3,6 +3,6 @@ kind: NameSpace
 metadata:
  name: roboshop 
  labels:
-  - project: roboshop
+    project: roboshop
     environment: dev 
  
