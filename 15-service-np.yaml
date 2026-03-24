@@ -3,7 +3,7 @@ kind: Service
 metadata: 
  name:  nginx-np 
 spec: 
- type: NodePort 
+ type: NodePort # port -range ---> 30000 – 32767
  selector: 
   project: roboshop 
   component: frontend 
