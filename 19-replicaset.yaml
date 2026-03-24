@@ -16,7 +16,7 @@ spec:
  # pod definition
  template: 
   metadata: 
-   lables: 
+   labels: 
     purpose: rs-demo 
     project: roboshop 
   spec: 
