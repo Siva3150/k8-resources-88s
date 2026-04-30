@@ -8,11 +8,7 @@ metadata:
 spec: 
  containers:
  - name: nginx 
-   image: nginx 
-   ports: 
-   - containerPort: 80 
+   image: nginx  
  - name: almalinux 
    image: almalinux 
-   ports:
-   - containerPort:80
    command: ["sleep", "100"]
