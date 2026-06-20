@@ -34,7 +34,7 @@ metadata:
 spec: 
  replicas: 3 
  selector: 
-  matchLables:
+  matchLabels:
    purpose: rs-demo 
    project: roboshop 
  template: 
