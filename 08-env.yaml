@@ -14,7 +14,7 @@
 #    - name: Duration 
 #      value: 7 hours 
 
-apiversion: v1 
+apiVersion: v1 
 kind: Pod 
 metadata: 
  name: env 
