@@ -1,15 +1,31 @@
+# apiVersion: v1 
+# kind: Service  
+# metadata: 
+#  name: nginx-lb 
+# spec: 
+#  type: LoadBalancer 
+#  selector:
+#   project: roboshop 
+#   component: frontend 
+#   environment: dev 
+#   purpose: load-balancer 
+#  ports:
+#   - protocol: TCP 
+#     port: 80 #service port 
+#     targetPort: 80 #container  port
+
 apiVersion: v1 
-kind: Service  
+kind: Service 
 metadata: 
  name: nginx-lb 
 spec: 
  type: LoadBalancer 
- selector:
+ selector: 
   project: roboshop 
   component: frontend 
   environment: dev 
-  purpose: load-balancer 
- ports:
-  - protocol: TCP 
-    port: 80 #service port 
-    targetPort: 80 #container  port
+  purpose: Loadbalancer 
+ targetPort: 
+ - protocol: TCP 
+   port: 80 
+   targetPort: 80 
