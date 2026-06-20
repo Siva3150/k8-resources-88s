@@ -32,7 +32,7 @@ metadata:
   purpose: rs-demo 
   project: roboshop 
 spec: 
- replicas: 3 
+ replicas: 4  
  selector: 
   matchLabels:
    purpose: rs-demo 
