@@ -18,8 +18,8 @@ metadata:
  name: errors 
 spec: 
  containers: 
-#  - name: nginx 
-#    image: nginxxxxx #imagepull backoff
-   - name: almalinux 
-     image: almalinux:9 
+ - name: nginx 
+   image: nginxxxxx #imagepull backoff
+  #  - name: almalinux 
+  #    image: almalinux:9 
      #command: ["sleep", "1000"] #crashloop backoff 
