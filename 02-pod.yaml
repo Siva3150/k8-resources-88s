@@ -1,14 +1,29 @@
+# apiVersion: v1 
+# kind: Pod 
+# metadata: 
+#    name: nginx 
+#    namespace: roboshop
+#    labels: 
+#     name: nginx 
+#     project: roboshop 
+# spec:
+#  containers:
+#  - name: nginx
+#    image: nginx 
+#    ports:
+#    - containerPort: 80 
+
 apiVersion: v1 
 kind: Pod 
-metadata: 
-   name: nginx 
-   namespace: roboshop
-   labels: 
-    name: nginx 
-    project: roboshop 
-spec:
- containers:
- - name: nginx
+metadata:
+ name: nginx 
+ namespace: roboshop 
+ labels: 
+  name: nginx 
+  project: roboshop
+spec: 
+ containers: 
+ - name: nginx 
    image: nginx 
-   ports:
+   ports: 
    - containerPort: 80 

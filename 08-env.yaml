@@ -1,15 +1,31 @@
-apiVersion: v1 
+# apiVersion: v1 
+# kind: Pod 
+# metadata: 
+#  name: env-demo 
+# spec: 
+#  containers: 
+#  - name: nginx 
+#    image: nginx 
+#    env: 
+#    - name: course 
+#      value: kubernetes 
+#    - name: trainer
+#      value: siva 
+#    - name: Duration 
+#      value: 7 hours 
+
+apiversion: v1 
 kind: Pod 
 metadata: 
- name: env-demo 
+ name: env 
 spec: 
  containers: 
  - name: nginx 
    image: nginx 
    env: 
    - name: course 
-     value: kubernetes 
-   - name: trainer
-     value: siva 
-   - name: Duration 
+     value: k8 
+   - name: duration 
      value: 7 hours 
+   - name: trainer 
+     value: sivakumar 
