@@ -22,4 +22,4 @@ spec:
 #    image: nginxxxxx #imagepull backoff
    - name: almalinux 
      image: almalinux:9 
-     command: ["sleep", "1000"] #crashloop backoff 
+     #command: ["sleep", "1000"] #crashloop backoff 
