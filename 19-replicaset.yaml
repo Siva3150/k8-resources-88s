@@ -43,6 +43,6 @@ spec:
     purpose: rs-demo 
     project: roboshop 
   spec: 
-   comtainers: 
+   containers: 
    - name: nginx 
      image: nginx 
