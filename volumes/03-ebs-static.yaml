@@ -32,7 +32,9 @@ spec:
 apiVersion: v1
 kind: Pod
 metadata:
-  name: ebs-static
+  name: nginx 
+  labels:
+    purpose: ebs-static
 spec:
   containers:
   - name: nginx
@@ -40,6 +42,8 @@ spec:
     volumeMounts:
     - name: nginx-html
       mountPath: /usr/share/nginx/html 
+  nodeSelector: 
+   topology.kubernetes.io/zone: us-east-1c
   volumes:
   - name: nginx-html 
     persistentVolumeClaim:
