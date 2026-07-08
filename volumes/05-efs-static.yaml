@@ -48,7 +48,6 @@ spec:
     persistentVolumeClaim:
       claimName: efs-static  
 
---- 
 
 --- 
 apiVersion: v1 
