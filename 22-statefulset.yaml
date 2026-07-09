@@ -53,7 +53,7 @@ spec:
   spec: 
    containers: 
    - name: nginx 
-     iamge: nginx 
+     image: nginx 
      ports: 
      - containerPort: 80 
        servicePort: 80 
