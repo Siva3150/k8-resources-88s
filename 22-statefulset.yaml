@@ -12,9 +12,8 @@ spec:
   app: nginx
   purpose: statefulset-demo
  ports: 
- - protocol: TCP 
-   port: 80 #service port 
-   targetPort: 80 #container port 
+ - prot: 80 
+   name: web  
 
 ---  
 
@@ -27,9 +26,8 @@ spec:
   app: nginx
   purpose: statefulset-demo
  ports: 
- - protocol: TCP 
-   port: 80 #service port 
-   targetPort: 80 #container port 
+ - prot: 80
+   name: web  
 
 ---
 
