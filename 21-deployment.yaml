@@ -1,0 +1,40 @@
+apiVersion: apps/v1 
+kind: Deployment 
+metadata: 
+ name: nginx 
+ #these are replicaset labels
+ labels:
+  purpose: deployment-demo  
+  project: roboshop 
+spec: 
+ replicas: 4
+ selector: 
+ # these labels are used to select pods 
+  matchLabels:
+   purpose: deployment-demo 
+   project: roboshop 
+ # pod definition 
+ template: 
+  metadata: 
+   labels: 
+    purpose: deployment-demo 
+    project: roboshop
+  spec: 
+   containers: 
+   - name: nginx 
+     image: nginx:trixie-perl
+
+--- 
+
+apiVersion: v1 
+kind: Service 
+metadata: 
+ name: nginx 
+spec: 
+ selector:
+  purpose: deployment-demo 
+  project: roboshop
+ ports: 
+ - protocol: TCP 
+   port: 80 #service port 
+   targetPort: 80 #container port 
