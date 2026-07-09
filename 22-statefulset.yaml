@@ -52,7 +52,7 @@ spec:
    - name: nginx 
      image: nginx 
      ports: 
-     - conatinerPort: 80 
+     - containerPort: 80 
        name: web 
      volumeMounts: 
      - name: www
