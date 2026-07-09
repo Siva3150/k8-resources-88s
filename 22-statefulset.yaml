@@ -54,20 +54,19 @@ spec:
    - name: nginx 
      image: nginx 
      ports: 
-     - port: 80 
-       targetPort: 80
-       #name: web 
+     - conatinerPort: 80 
+       name: web 
      volumeMounts: 
      - name: www
        mountPath: /usr/share/nginx/html
 
 # This is PVC
-  volumeClaimTemplates:
-  - metadata:
-      name: www 
-    spec:
-      accessModes: [ "ReadWriteOnce" ]
-      storageClassName: "roboshop-ebs"
-      resources:
-        requests:
-          storage: 1Gi
+ volumeClaimTemplates:
+ - metadata:
+    name: www 
+   spec:
+    accessModes: [ "ReadWriteOnce" ]
+    storageClassName: "roboshop-ebs"
+    resources:
+      requests:
+        storage: 1Gi
